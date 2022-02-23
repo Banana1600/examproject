@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'as/css/choice.css' %}">
+</head>
+
+<body>
+    <div class="container">
+
+        <form class="toggle">
+
+
+            <button href="{%url 'Dashboard_s' %}" onclick="" type="radio" id="choice1" name="choice" value="creative"></button>
+            <label for="choice1">Student</label>
+
+
+
+            <input href="{%url 'Dashboard_t' %}" type="radio" id="choice2" name="choice" value="productive">
+            <label for="choice2">teacher</label>
+
+            <div id="flap"><span class="content">productive</span></div>
+
+        </form>
+
+    </div>
+</body>
+<script src="{% static 'as/script/choice.js' %}"></script>
+
+</html>

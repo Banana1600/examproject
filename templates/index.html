@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ESS</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="{% static 'as/css/style.css' %}">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <!-- Hero -->
+    <section class="et-hero-tabs" id="et-hero-tabs">
+        <h1>Exam Stores System</h1>
+        <h3>เว็บไซต์นี้จะช่วยให้ครูเก็บข้อสอบ</h3>
+
+        <button id="button" onclick="document.location='{%url 'choice' %}'">Login</button>
+
+        <div class="et-hero-tabs-container">
+            <a class="et-hero-tab" href="#et-hero-tabs">Home</a>
+
+
+            <a class="et-hero-tab" href="#tab-Contactus">Contact us</a>
+            <span class="et-hero-tab-slider"></span>
+        </div>
+    </section>
+
+    <!-- Main -->
+    <main class="et-main">
+
+
+        <section class="et-slide" id="tab-Contactus">
+            <h1>Contact us</h1>
+            <h3>something about angular</h3>
+        </section>
+
+    </main>
+    <!-- partial -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="{% static 'as/script/script.js' %}"></script>
+</body>
+
+</html>

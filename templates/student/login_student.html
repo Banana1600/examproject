@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'as/css/login.css' %}">
+</head>
+
+<body>
+    <header></header>
+
+    <section>
+        <div class="container">
+
+            <div class="card left">
+
+                <div class="face card-front">
+                    <div class="signin-form">
+                        <form action="javascript:void(0);">
+                            <h2>Sign in</h2>
+
+                            <div class="social-container">
+                                <a href="javascript:void(0);" class="social" id="fb"><i class="fab fa-facebook-f"></i></a>
+                                <a href="javascript:void(0);" class="social" id="gp"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="javascript:void(0);" class="social" id="lin"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+
+                            <span class="formspan">ลงทะเบียนผ่านทาง</span>
+                            <input type="email" placeholder="Email" />
+                            <input type="password" placeholder="Password" />
+                            <span class="olspan forgot"><a href="javascript:void(0);">ลืมรหัสผ่าน?</a></span>
+                            <button class="formbtn">Sign in</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="face card-back">
+                    <div class="panel">
+                        <h2>ยินดีต้อนรับสู่ ESS</h2>
+                        <span class="panelspan">กรุณากรอกข้อมูลของท่าน</span>
+                        <button class="panelbtn signInBtn">Sign In</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="card right">
+
+                <div class="face card-front">
+                    <div class="panel">
+                        <h2>ยินดีต้อนรับสู่ ESS</h2>
+                        <span class="panelspan">หากท่านยังไม่ได้ลงทะเบียนกรุณาสมัครก่อน</span>
+                        <button class="panelbtn signUpBtn">Sign Up</button>
+                    </div>
+                </div>
+
+                <div class="face card-back">
+                    <div class="signup-form">
+                        <form action="javascript:void(0);">
+                            <h2>Create Account</h2>
+
+                            <div class="social-container">
+                                <a href="javascript:void(0);" class="social" id="fb"><i class="fab fa-facebook-f"></i></a>
+                                <a href="javascript:void(0);" class="social" id="gp"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="javascript:void(0);" class="social" id="lin"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+
+                            <span class="formspan">สมัครผ่านทาง</span>
+                            <input type="email" placeholder="Email" />
+                            <input type="name" placeholder="Username" />
+                            <input type="password" placeholder="Password" />
+                            <button class="formbtn">Sign up</button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <span></span>
+        </div>
+    </footer>
+
+
+    <!-- partial -->
+    <script src="{% static 'as/script/login.js' %}"></script>
+
+</body>
+
+</html>
